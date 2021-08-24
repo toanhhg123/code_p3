@@ -1,0 +1,141 @@
+:root {
+  --primary-color: #ec1f55;
+  --text-color: #333;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: #f5f5f5;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.player {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+  height: 50vh;
+}
+
+.dashboard {
+  padding: 16px 16px 14px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 480px;
+  border-bottom: 1px solid #ebebeb;
+}
+header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+header h4 {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+header h2 {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+.cd {
+  width: 200px;
+  margin: 0 auto;
+}
+.cd-thumb {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+  background-color: #333;
+  background-size: cover;
+  margin: auto;
+}
+.player .icon-pause {
+  display: none;
+}
+.player.playing .icon-play {
+  display: none;
+}
+.player.playing .icon-pause {
+  display: inline-block;
+}
+.control {
+  display: flex;
+  justify-content: space-around;
+  padding: 18px 0 8px 0;
+}
+.control .btn {
+  color: #666;
+  padding: 18px;
+  font-size: 20px;
+}
+.control .btn-toggle-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+.progress {
+  width: 100%;
+}
+#volume {
+  width: 20%;
+  display: inline-block;
+}
+.control .btn.active {
+  color: var(--primary-color);
+}
+.playlist {
+  margin-top: 408px;
+  padding: 12px;
+}
+.song {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.song .thumb {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-color: rgb(157, 27, 27);
+}
+.song .body {
+  flex: 1;
+  padding: 0 16px;
+}
+.song.active {
+  background-color: var(--primary-color);
+}
+.song.active .author,
+.song.active .option,
+.song.active .title {
+  color: #fff;
+}
+.btn.btn-random.active {
+  color: var(--primary-color);
+}
+.fas.fa-volume-up{
+  opacity: 0.7;
+}
+
+.fas.fa-volume-up:hover{
+ opacity: 0.5;
+}
